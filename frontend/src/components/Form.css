@@ -1,0 +1,34 @@
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    
+  }
+  
+  .file-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .upload-button {
+    background-color: #26a88e;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 50%
+  }
+  
+  .upload-button:hover {
+    background-color: #0056b3;
+  }
+  
