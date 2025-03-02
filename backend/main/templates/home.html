@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %} home {% endblock %}
+
+{% block content %}
+<p> {{user}} </p>
+
+<form action="get_content" method="post"  enctype="multipart/form-data">
+    {% csrf_token %}
+    upload file: <input type="file" name="pdf" accept='.pdf'> <br>
+    <input type="hidden" id="myApiKey" name="Authorization" value="api-key a7pt6Tx9.cRdfe7apstSlGPgkg9mxzkLu42bpdacb">
+    <input type="submit">
+</form>
+
+{% for key,values in result.items %}
+    <h1>Page {{key}}: </h1>
+    <p>{{values|linebreaksbr}}</p>
+{% endfor %}
+{% endblock %}
